@@ -9,7 +9,7 @@ import {MessageService} from './message.service';
 })
 export class HeroService {
 
-  constructor(public messageService: MessageService) { }
+  constructor(private messageService: MessageService) { }
 
   getHeroes(): Observable<Hero[]>{
     //
